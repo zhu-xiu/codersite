@@ -1,0 +1,5 @@
+/home/zhu/codersite/my_coderside/tensquare_parent/tensquare_base/src/main/java/com/tensquare/base/MyBaseApplication.java
+/home/zhu/codersite/my_coderside/tensquare_parent/tensquare_base/src/main/java/com/tensquare/base/controller/LabelController.java
+/home/zhu/codersite/my_coderside/tensquare_parent/tensquare_base/src/main/java/com/tensquare/base/pojo/Label.java
+/home/zhu/codersite/my_coderside/tensquare_parent/tensquare_base/src/main/java/com/tensquare/base/service/LabelSercice.java
+/home/zhu/codersite/my_coderside/tensquare_parent/tensquare_base/src/main/java/com/tensquare/base/dao/LabelDao.java

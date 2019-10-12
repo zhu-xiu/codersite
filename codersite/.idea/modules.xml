@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/codersite_base/codersite_base.iml" filepath="$PROJECT_DIR$/codersite_base/codersite_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codersite_common/codersite_common.iml" filepath="$PROJECT_DIR$/codersite_common/codersite_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codersite_parent.iml" filepath="$PROJECT_DIR$/codersite_parent.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,4 @@
+com/tensquare/common/entity/PageResult.class
+com/tensquare/common/entity/StatusCode.class
+com/tensquare/common/util/SnowflakeIdWorker.class
+com/tensquare/common/entity/Result.class
