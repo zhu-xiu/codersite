@@ -14,10 +14,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableJpaRepositories
-public class MyBaseApplication {
+public class BaseApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MyBaseApplication.class, args) ;
+        SpringApplication.run(BaseApplication.class, args) ;
     }
 
     @Bean

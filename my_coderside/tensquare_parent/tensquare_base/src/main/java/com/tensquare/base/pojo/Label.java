@@ -9,7 +9,7 @@ import javax.persistence.Table;
  */
 
 @Entity
-@Table
+@Table(name = "tb_label")
 public class Label {
     @Id
     private String id;
