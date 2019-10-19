@@ -3,13 +3,16 @@ package com.tensquare.recruit.pojo.entity;
 import lombok.Data;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * 数据表实体类
  * @author root
  */
 @Entity
+@Table(name = "tb_enterprise")
 @Data
+
 public class Enterprise {
 
     /**
@@ -46,7 +49,7 @@ public class Enterprise {
     /**
      * 是否热门，０：非热门　　１：热门
      */
-    private String ishot;
+    private String isHot;
 
     /**
      * LOGO
@@ -56,7 +59,7 @@ public class Enterprise {
     /**
      * 职位数
      */
-    private String jobcount;
+    private String jobCount;
 
     /**
      * URL

@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Date;
 
 /**
@@ -12,7 +13,9 @@ import java.util.Date;
  * @create 2019.10.15
  */
 @Entity
+@Table(name = "tb_recruit")
 @Data
+
 public class Recruit {
 
     /**
@@ -24,7 +27,7 @@ public class Recruit {
     /**
      * 职位名称
      */
-    private String jobname;
+    private String jobName;
 
     /**
      * 薪资范围
@@ -34,7 +37,7 @@ public class Recruit {
     /**
      * 经验要求
      */
-    private String condition;
+    private String experience;
 
     /**
      * 学历要求
@@ -59,7 +62,7 @@ public class Recruit {
     /**
      * 发布时间
      */
-    private Date createtime;
+    private Date createTime;
 
     /**
      * 状态 0关闭1开启2推荐
