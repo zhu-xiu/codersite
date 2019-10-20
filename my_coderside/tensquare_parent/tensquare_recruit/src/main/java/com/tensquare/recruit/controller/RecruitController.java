@@ -29,4 +29,10 @@ public class RecruitController {
         List<Recruit> list = recruitService.findTop4ByStateOrderByCreatetimeDesc("2");
         return new Result(true, StatusCode.OK, "查询成功", list);
     }
+
+    @GetMapping("/search/newlist")
+    public Result newList(){
+        List<Recruit> list = recruitService.newList();
+        return new Result(true,StatusCode.OK,"查询成功", list);
+    }
 }

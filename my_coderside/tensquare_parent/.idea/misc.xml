@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/tensquare_common/pom.xml" />
         <option value="$PROJECT_DIR$/tensquare_base/pom.xml" />
         <option value="$PROJECT_DIR$/tensquare_recruit/pom.xml" />
+        <option value="$PROJECT_DIR$/tensquare_qa/pom.xml" />
       </list>
     </option>
   </component>

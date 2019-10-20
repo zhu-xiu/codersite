@@ -24,5 +24,5 @@ public interface RecruitDao extends
      */
     public List<Recruit> findTop4ByStateOrderByCreateTimeDesc(String state);
 
-    public List<Recruit> findTop12By
+    public List<Recruit> findTop12ByStateNotOrderByCreateTimeDesc(String state);
 }

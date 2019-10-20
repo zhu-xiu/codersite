@@ -20,7 +20,7 @@ public class EnterpriseController {
     @Autowired
     private EnterpriseSercice enterpriseSercice;
 
-    @GetMapping("/search/hotList")
+    @GetMapping("/search/hotlist")
     public Result hotList(){
         return new Result(true, StatusCode.OK, "查询成功", enterpriseSercice.hotlist());
     }
