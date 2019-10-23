@@ -23,8 +23,15 @@ public class ProblemController {
     private ProblemService problemService;
 
     @GetMapping("/newlist/{labelid}/{page}/{size}")
-    public Result findNewListByLabelId(@PathVariable String labelId, @PathVariable int page, @PathVariable int size){
-        Page<Problem> pagelist = problemService.findNewListByLabelId(labelId,page,size);
+    public Result findNewListByLabelId(@PathVariable String labelid, @PathVariable int page, @PathVariable int size){
+        Page<Problem> pagelist = problemService.findNewListByLabelId(labelid,page,size);
+        PageResult<Problem> pageResult = new PageResult<>(pagelist.getTotalElements(), pagelist.getContent());
+        return new Result(true, StatusCode.OK,"查询成功", pageResult);
+    }
+
+    @GetMapping("/hotlist/{labelid}/{page}/{size}")
+    public Result findHotListByLabelId(@PathVariable String labelid, @PathVariable int page, @PathVariable int size){
+        Page<Problem> pagelist = problemService.findHotListByLabelId(labelid,page,size);
         PageResult<Problem> pageResult = new PageResult<>(pagelist.getTotalElements(), pagelist.getContent());
         return new Result(true, StatusCode.OK,"查询成功", pageResult);
     }

@@ -22,4 +22,12 @@ public interface ProblemDao extends
      * @return
      */
     public Page<Problem> findNewListByLabelId(String labelId, Pageable pageable);
+
+    /**
+     * 根据ｉｄ查询热门问题列表
+     * @param labelId
+     * @param pageable
+     * @return
+     */
+    public Page<Problem> findHotListByLabelId(String labelId, Pageable pageable);
 }

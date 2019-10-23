@@ -21,4 +21,10 @@ public class ProblemServiceImpl implements ProblemService {
         PageRequest pageRequest = PageRequest.of(page-1, size);
         return problemDao.findNewListByLabelId(labelId, (Pageable) pageRequest);
     }
+
+    @Override
+    public Page<Problem> findHotListByLabelId(String labelId, int page, int size) {
+        PageRequest pageRequest = PageRequest.of(page-1, size);
+        return problemDao.findHotListByLabelId(labelId, (Pageable) pageRequest);
+    }
 }
