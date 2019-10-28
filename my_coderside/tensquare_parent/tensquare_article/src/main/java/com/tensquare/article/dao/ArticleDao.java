@@ -20,7 +20,7 @@ public interface ArticleDao extends
      * @param id
      */
     @Modifying
-    @Query("update Article set state='1' where id = ?1 ")
+    @Query("update Article set state='1' where id = ?1")
     public void examine(String id);
 
 }
